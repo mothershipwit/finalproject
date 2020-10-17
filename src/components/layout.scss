@@ -2,36 +2,49 @@ $color-primary: #0b132b;
 $color-secondary: #3a506b;
 $color-accent: #1c2541;
 
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Miriam+Libre:wght@700&family=Playfair+Display:ital,wght@1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto+Mono:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Miriam+Libre:wght@700&family=Playfair+Display:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto+Mono:wght@300&display=swap");
 
-
-h1,h2,h3 {
-    font-family: 'limelight';
-
+h1,
+h2 {
+  font-family: "Indie Flower", sans-serif;
 }
 h1 {
-    color: $color-primary;
-    font-family: 'Miriam Libre', sans-serif;
-    font-family: 'Playfair Display', serif;
+  color: blue;
+  font-family: "Indie Flower", sans-serif;
 }
 
-  
 body {
-    padding-top: 5rem;
-    background-color: #6fffe9;
-    font-family: 'Indie Flower', cursive;
-    font-family: 'Roboto Mono', monospace;
-  }
-  .btn {
-    font-family: 'Dosis', sans-serif;
-      padding: 2px 4px;
-      font-size: 30px;
-      border-radius: 10px;
-      border: 4px solid #2d73cf;
-      background-color: $color-accent;
-      color: #58c4bb;
-    }
- 
-
-  
+  padding-top: 5rem;
+  background-color: #6fffe9;
+  font-family: "Indie Flower", cursive;
+  font-family: "Roboto", monospace;
+}
+.btn {
+  font-family: "Dosis", sans-serif;
+  padding: 2px 4px;
+  font-size: 30px;
+  border-radius: 10px;
+  border: 4px solid #2d73cf;
+  background-color: $color-accent;
+  color: #58c4bb;
+}
+p {
+  color: blue;
+  font-family: "Rancho", serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+h3 {
+  color: rgb(218, 23, 218);
+  font-family: "Rancho", serif;
+  font-size: 64px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+h5 {
+  font-family: "Indie Flower", cursive;
+  color: rgb(48, 24, 136);
+}
+h1 {
+  color: purple;
+}

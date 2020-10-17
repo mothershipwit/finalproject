@@ -25,6 +25,16 @@ export default function Portfolio({ data }) {
           ))}
         </Carousel>
       </div>
+      <p>
+        <h3>
+          Follow my Facebook Group,{" "}
+          <a href="https://www.facebook.com/groups/nwafoodjunkies">
+            NWA Food Junkies
+          </a>{" "}
+          if you like to follow local establishments.
+        </h3>{" "}
+      </p>
+      <a href="javascript:history.back()">BACK</a>
     </Layout>
   )
 }
