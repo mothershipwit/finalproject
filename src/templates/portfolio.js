@@ -2,6 +2,9 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { Carousel } from "react-bootstrap"
+import Accordion from "react-bootstrap/Accordion"
+import Card from "react-bootstrap/Card"
+import Button from "react-bootstrap/Button"
 
 export default function Portfolio({ data }) {
   const portfolio = data.contentfulPortfolio
@@ -33,6 +36,30 @@ export default function Portfolio({ data }) {
           </a>{" "}
           if you like to follow local establishments.
         </h3>{" "}
+        <Accordion defaultActiveKey="0">
+          <Card>
+            <Card.Header>
+              <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                Click me!
+              </Accordion.Toggle>
+            </Card.Header>
+            <Accordion.Collapse eventKey="0">
+              <Card.Body>Copyright. 2020 Witni Whittle.</Card.Body>
+            </Accordion.Collapse>
+          </Card>
+          <Card>
+            <Card.Header>
+              <Accordion.Toggle as={Button} variant="link" eventKey="1">
+                Click me, too!
+              </Accordion.Toggle>
+            </Card.Header>
+            <Accordion.Collapse eventKey="1">
+              <Card.Body>
+                Click the Back button to see more of my Portfolio!
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+        </Accordion>
       </p>
       <a href="javascript:history.back()">BACK</a>
     </Layout>

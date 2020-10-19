@@ -65,6 +65,7 @@ export default function Home({ data }) {
             </Carousel.Item>
           </Carousel>
           <br></br>
+
           <div container>
             <div className="row">
               {data.allContentfulPortfolio.nodes.map((node, index) => (
