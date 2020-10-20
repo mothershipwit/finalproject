@@ -20,50 +20,59 @@ export default function Home({ data }) {
         <div>
           <h5>My name is Witni and I love all things Art and Food related.</h5>
         </div>
-        <div>
-          <Carousel>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="/img/paintings.jpg"
-                alt="First slide"
-              />
-              <Carousel.Caption>
-                <h3>Custom Painted Art</h3>
-                <p>
-                  I create custom, hand painted art designs from your ideas or
-                  pictures!
-                </p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="/img/bowie3.jpg"
-                alt="Third slide"
-              />
+        <div className="container">
+          <div class="row">
+            <div class="col-16">
+              <div>
+                <Carousel>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="/img/paintings.jpg"
+                      alt="First slide"
+                    />
+                    <Carousel.Caption>
+                      <h3>Custom Painted Art</h3>
+                      <p>
+                        I create custom, hand painted art designs from your
+                        ideas or pictures!
+                      </p>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="/img/bowie3.jpg"
+                      alt="Third slide"
+                    />
 
-              <Carousel.Caption>
-                <h3>Photography</h3>
-                <p>Capture your sweetest moments with heart felt photography</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="/img/hair.jpg"
-                alt="Third slide"
-              />
+                    <Carousel.Caption>
+                      <h3>Photography</h3>
+                      <p>
+                        Capture your sweetest moments with heart felt
+                        photography
+                      </p>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="/img/hair.jpg"
+                      alt="Third slide"
+                    />
 
-              <Carousel.Caption>
-                <h3>Hair Design</h3>
-                <p>
-                  I have been a licensed, professional Cosemtologist
-                  specializing in Color for over 12 years.
-                </p>
-              </Carousel.Caption>
-            </Carousel.Item>
-          </Carousel>
+                    <Carousel.Caption>
+                      <h3>Hair Design</h3>
+                      <p>
+                        I have been a licensed, professional Cosemtologist
+                        specializing in Color for over 12 years.
+                      </p>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                </Carousel>
+              </div>
+            </div>
+          </div>
           <br></br>
 
           <div container>

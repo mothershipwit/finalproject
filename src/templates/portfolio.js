@@ -19,14 +19,18 @@ export default function Portfolio({ data }) {
         class="img-thumbnail"
       />
       <p>{portfolio.description.description}</p>
-      <div className="row">
-        <Carousel>
-          {portfolio.gallery.map((node, index) => (
-            <Carousel.Item>
-              <img src={node.file.url}></img>
-            </Carousel.Item>
-          ))}
-        </Carousel>
+      <div className="container">
+        <div class="row">
+          <div class="col-16">
+            <Carousel>
+              {portfolio.gallery.map((node, index) => (
+                <Carousel.Item>
+                  <img src={node.file.url}></img>
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          </div>
+        </div>
       </div>
       <p>
         <h3>

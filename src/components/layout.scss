@@ -49,3 +49,9 @@ h1 {
   font-family: "Amatic SC", serif;
   color: purple;
 }
+@media (max-width: 60%) {
+  .carousel {
+    width: 60%;
+    height: auto;
+  }
+}
