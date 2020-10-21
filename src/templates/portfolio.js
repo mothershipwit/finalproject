@@ -33,13 +33,6 @@ export default function Portfolio({ data }) {
         </div>
       </div>
       <p>
-        <h3>
-          Follow my Facebook Group,{" "}
-          <a href="https://www.facebook.com/groups/nwafoodjunkies">
-            NWA Food Junkies
-          </a>{" "}
-          if you like to follow local establishments.
-        </h3>{" "}
         <Accordion defaultActiveKey="0">
           <Card>
             <Card.Header>
@@ -69,7 +62,6 @@ export default function Portfolio({ data }) {
     </Layout>
   )
 }
-
 export const query = graphql`
   query portfolioQuery($slug: String!) {
     contentfulPortfolio(name: { eq: $slug }) {

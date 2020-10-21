@@ -2,6 +2,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import Carousel from "react-bootstrap/Carousel"
+import { graphql } from "gatsby"
 
 export default function Home({ data }) {
   return (
@@ -14,15 +15,25 @@ export default function Home({ data }) {
             content="Custom Art, design, Photography and Web Development, as well as some yummy food."
           ></meta>
         </Helmet>
-        <div>
-          <h1 class="animate__animated animate__bounce">Meet Witni Whittle</h1>
+        <div className="container2">
+          <div>
+            <div class="container2">
+              <h1 class="animate__animated animate__bounce">
+                Meet Witni Whittle
+              </h1>
+            </div>
+          </div>
         </div>
-        <div>
+        <br></br>
+
+        <div className="container3">
           <h5>My name is Witni and I love all things Art and Food related.</h5>
         </div>
+
+        <br></br>
         <div className="container">
           <div class="row">
-            <div class="col-16">
+            <div class="col-14">
               <div>
                 <Carousel>
                   <Carousel.Item>
@@ -31,13 +42,17 @@ export default function Home({ data }) {
                       src="/img/paintings.jpg"
                       alt="First slide"
                     />
-                    <Carousel.Caption>
-                      <h3>Custom Painted Art</h3>
-                      <p>
-                        I create custom, hand painted art designs from your
-                        ideas or pictures!
-                      </p>
-                    </Carousel.Caption>
+
+                    <div className="container4">
+                      <div class="col-20">
+                        <h3>Custom Painted Art</h3>
+                        <p2>
+                          I create custom, hand painted art designs from your
+                          ideas or pictures!
+                        </p2>
+                      </div>
+                    </div>
+                    <br></br>
                   </Carousel.Item>
                   <Carousel.Item>
                     <img
@@ -45,14 +60,17 @@ export default function Home({ data }) {
                       src="/img/bowie3.jpg"
                       alt="Third slide"
                     />
-
-                    <Carousel.Caption>
+                    <div className="container4">
+                      <div class="col-20"></div>
                       <h3>Photography</h3>
-                      <p>
-                        Capture your sweetest moments with heart felt
-                        photography
-                      </p>
-                    </Carousel.Caption>
+
+                      <div container>
+                        <p2>
+                          Capture your sweetest moments with heart felt
+                          photography
+                        </p2>
+                      </div>
+                    </div>
                   </Carousel.Item>
                   <Carousel.Item>
                     <img
@@ -60,14 +78,14 @@ export default function Home({ data }) {
                       src="/img/hair.jpg"
                       alt="Third slide"
                     />
-
-                    <Carousel.Caption>
+                    <div className="container4">
+                      <div class="col-20"></div>
                       <h3>Hair Design</h3>
-                      <p>
+                      <p2>
                         I have been a licensed, professional Cosemtologist
                         specializing in Color for over 12 years.
-                      </p>
-                    </Carousel.Caption>
+                      </p2>
+                    </div>
                   </Carousel.Item>
                 </Carousel>
               </div>
