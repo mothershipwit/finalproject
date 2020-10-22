@@ -4,13 +4,12 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
-;(module.exports = {
+module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `My Resume Portfolio`,
     description: `About Witni Whittle`,
   },
-
   plugins: [
     {
       resolve: `gatsby-source-contentful`,
@@ -19,19 +18,18 @@
         accessToken: `vmZdDhxz48q-ijxw8b_XIxHkC-lKziHklz_5OgQIvgY`,
       },
     },
-
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `limelight`,
+          `Rancho`,
+          `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
+        ],
+        display: "swap",
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
   ],
-}),
-  {
-    resolve: `gatsby-plugin-google-fonts`,
-    option: {
-      fonts: [
-        `limelight`,
-        `Rancho`,
-        `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
-      ],
-      display: "swap",
-    },
-  }
+}

@@ -3,6 +3,8 @@ import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import Carousel from "react-bootstrap/Carousel"
 import { graphql } from "gatsby"
+import Card from "react-bootstrap/Card"
+import Button from "react-bootstrap/Button"
 
 export default function Home({ data }) {
   return (
@@ -16,13 +18,19 @@ export default function Home({ data }) {
           ></meta>
         </Helmet>
         <div className="container2">
-          <div>
-            <div class="container2">
-              <h1 class="animate__animated animate__bounce">
-                Meet Witni Whittle
-              </h1>
-            </div>
-          </div>
+          <Card>
+            <Card.Header as="h5">Hello</Card.Header>
+            <Card.Body>
+              <Card.Title>
+                {" "}
+                <h1 class="animate__animated animate__bounce">
+                  I'm Witni Whittle
+                </h1>
+              </Card.Title>
+              <Card.Text>I'm</Card.Text>
+              <Button variant="primary">Go somewhere</Button>
+            </Card.Body>
+          </Card>
         </div>
         <br></br>
 
@@ -91,6 +99,7 @@ export default function Home({ data }) {
               </div>
             </div>
           </div>
+
           <br></br>
 
           <div container>
