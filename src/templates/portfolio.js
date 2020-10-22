@@ -25,7 +25,7 @@ export default function Portfolio({ data }) {
             <Carousel>
               {portfolio.gallery.map((node, index) => (
                 <Carousel.Item>
-                  <img src={node.file.url}></img>
+                  <img src={node.file.url} alt="contentful"></img>
                 </Carousel.Item>
               ))}
             </Carousel>

@@ -27,28 +27,31 @@ export default function Home({ data }) {
                   I'm Witni Whittle
                 </h1>
               </Card.Title>
-              <Card.Text>I'm</Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Card.Text>
+                I am a Front End Web Developer, Photographer, Artist
+                Cosmetologist and Foodie.
+              </Card.Text>
+              <div>
+                <Button variant="primary">view</Button>
+              </div>
             </Card.Body>
           </Card>
         </div>
         <br></br>
 
-        <div className="container3">
-          <h5>My name is Witni and I love all things Art and Food related.</h5>
-        </div>
+        <div className="container3"></div>
 
         <br></br>
         <div className="container">
           <div class="row">
-            <div class="col-14">
+            <div class="col-33">
               <div>
                 <Carousel>
                   <Carousel.Item>
                     <img
                       className="d-block w-100"
                       src="/img/paintings.jpg"
-                      alt="First slide"
+                      alt="painted shoes"
                     />
 
                     <div className="container4">
@@ -66,7 +69,7 @@ export default function Home({ data }) {
                     <img
                       className="d-block w-100"
                       src="/img/bowie3.jpg"
-                      alt="Third slide"
+                      alt="baby Bowie"
                     />
                     <div className="container4">
                       <div class="col-20"></div>
@@ -84,7 +87,7 @@ export default function Home({ data }) {
                     <img
                       className="d-block w-100"
                       src="/img/hair.jpg"
-                      alt="Third slide"
+                      alt="hair design"
                     />
                     <div className="container4">
                       <div class="col-20"></div>

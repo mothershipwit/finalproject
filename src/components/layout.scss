@@ -35,14 +35,14 @@ p {
   font-size: 48px;
 }
 h3 {
-  color: rgb(218, 23, 218);
+  color: #02c3bd;
   font-family: "Amatic sc", serif;
   font-size: 64px;
   text-shadow: 4px 4px 4px #aaa;
 }
 h5 {
   font-family: "Amatic SC", cursive;
-  color: #a0acad;
+  color: #bfacb5;
   text-align: center;
   font-size: 45px;
 }
@@ -79,6 +79,6 @@ p2 {
   font-family: "Amatic SC", serif;
   font-size: 32px;
 }
-card-text {
-  color: red;
+.card {
+  background-color: #292131;
 }
