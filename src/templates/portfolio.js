@@ -2,9 +2,9 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { Carousel } from "react-bootstrap"
-import Accordion from "react-bootstrap/Accordion"
 import Card from "react-bootstrap/Card"
-import Button from "react-bootstrap/Button"
+
+
 
 export default function Portfolio({ data }) {
   const portfolio = data.contentfulPortfolio
@@ -33,35 +33,34 @@ export default function Portfolio({ data }) {
         </div>
       </div>
       <p>
-        <Accordion defaultActiveKey="0">
-          <Card>
-            <Card.Header>
-              <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                Click me!
-              </Accordion.Toggle>
-            </Card.Header>
-            <Accordion.Collapse eventKey="0">
-              <Card.Body>Copyright. 2020 Witni Whittle.</Card.Body>
-            </Accordion.Collapse>
-          </Card>
-          <Card>
-            <Card.Header>
-              <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                Click me, too!
-              </Accordion.Toggle>
-            </Card.Header>
-            <Accordion.Collapse eventKey="1">
-              <Card.Body>
-                Click the Back button to see more of my Portfolio!
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
-        </Accordion>
+       <Card>
+          <Card.Header>&copy;Witni Whittle 2020</Card.Header>
+  <Card.Body>
+    <blockquote className="blockquote mb-0">
+      <p>
+                {' '} <h6>GET IN TOUCH</h6>
+                <div>
+<h7> Do you want to know more about me or my work?
+
+Or do you have a cool project that you want to talk about?
+
+Send me an email or DM on one of these platforms</h7> {' '}
+      </div>
       </p>
-      <a href="javascript:history.back()">BACK</a>
+      
+      <footer>
+            <a href="javascript:history.back()">BACK</a>
+      </footer>
+    </blockquote>
+  </Card.Body>
+</Card>
+      </p>
+  
+     
     </Layout>
   )
 }
+    
 export const query = graphql`
   query portfolioQuery($slug: String!) {
     contentfulPortfolio(name: { eq: $slug }) {
