@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Carousel from "react-bootstrap/Carousel"
 import { graphql } from "gatsby"
 import Card from "react-bootstrap/Card"
-import Button from "react-bootstrap/Button"
+
 
 export default function Home({ data }) {
   return (
@@ -28,12 +28,10 @@ export default function Home({ data }) {
                 </h1>
               </Card.Title>
               <Card.Text>
-                I am a Front End Web Developer, Photographer, Artist
+                I am a Front End Web Developer, Photographer, Artist,
                 Cosmetologist and Foodie.
               </Card.Text>
-              <div>
-                <Button variant="primary">view</Button>
-              </div>
+             
             </Card.Body>
           </Card>
         </div>
